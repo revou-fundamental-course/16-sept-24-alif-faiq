@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <img src="images/logo.png" alt="logo" class="logo" width="60" height="60" />
+
+        <a href="#" class="nav-item">Home</a>
+        <a href="#profile" class="nav-item">Profile</a>
+        <a href="#form-container" class="nav-item">Message To Me</a>
+        <a href="#social-media-icons" class="nav-item">Social Media</a>
+    </nav>
+
+    <hr>
+
+    <main class="body">
+        <section id="home">
+            <article>
+                <header>
+                    <h2 id="welcomeMessage">Hi User, Welcome To Website</h2>
+                </header>
+                <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatibus ab asperiores inventore
+                    soluta praesentium odio eveniet sint amet explicabo nobis debitis aperiam, et vitae cumque assumenda
+                    harum itaque placeat.
+                    Commodi nam alias consectetur vel earum autem quia! Unde animi vel recusandae nobis, pariatur neque
+                    ullam sit ratione, excepturi quisquam labore commodi aliquid sunt laborum alias maiores odit tempora
+                    eligendi.</p>
+                <div class="banner"></div>
+                <hr>
+            </article>
+        </section>
+
+        <section id="profile">
+            <header>
+                <h2>Profile</h2>
+            </header>
+            <section class="profile">
+                <div class="profile-item">
+                    <div class="profile-item-img"></div>
+                    <h2>Software Engineer</h2>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-item-img"></div>
+                    <h2>Front-End Developer</h2>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-item-img"></div>
+                    <h2>Back-End Developer</h2>
+                </div>
+            </section>
+            <hr>
+        </section>
+
+        <section>
+            <header id="form-container">
+                <h2>Message To Me</h2>
+            </header>
+            <div class="form-container">
+                <form action="" class="message-form" id="messageForm">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" class="input-mode" id="nama" name="nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="tgl">Tanggal:</label>
+                        <input type="date" class="input-mode" id="tgl" name="tgl">
+                    </div>
+                    <div class="form-group">
+                        <label for="jk">Jenis Kelamin:</label>
+                        <div class="gender-buttons">
+                            <input type="radio" id="laki-laki" name="jk" value="Laki-Laki">
+                            <label for="laki-laki">Laki-Laki</label>
+                            <input type="radio" id="perempuan" name="jk" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan:</label>
+                        <textarea name="pesan" class="input-mode" id="pesan" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn-submit" name="submit" id="submit" value="Submit">
+                    </div>
+                </form>
+
+                <div class="info-box" id="infoBox">
+                    <h3 class="submitted-info-title">Informasi yang Dikirim</h3>
+                    <div id="submittedInfo">
+                        <p>Belum ada informasi yang dikirim.</p>
+                    </div>
+                </div>
+            </div>
+            <br><hr>
+        </section>
+
+        <section id="social-media-icons">
+            <h2>Social Media</h2>
+            <div class="social-media-icons">
+                <a href="#" target="_blank" class="social-icon whatsapp"></a>
+                <a href="#" target="_blank" class="social-icon instagram"></a>
+                <a href="#" target="_blank" class="social-icon facebook"></a>
+                <a href="#" target="_blank" class="social-icon linkedin"></a>
+            </div>
+            <hr>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p> &copy; 2024 Muhammad Alif Faiq | Mini Project By <a href="#">RevoU</a> </p>
+    </footer>
+
+    <!-- Add this before the closing </body> tag -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

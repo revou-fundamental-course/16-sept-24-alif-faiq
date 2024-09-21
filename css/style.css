@@ -1,0 +1,248 @@
+/* Ini css */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav > a {
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border: 5px solid white;
+    background-color: brown;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.logo {
+    margin-right: auto;
+}
+
+.body {
+    flex-direction: column; 
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.body > div {
+    display: flex; 
+    flex: 1; 
+    border: 2px solid black;
+    margin: 1px;
+}
+.banner {
+    height: 400px;
+    background-image: url(https://picsum.photos/1001);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.profile-item{
+    height: 160px;
+    text-align:-webkit-center;
+}
+.profile-item-img{
+    height: 80px;
+    background-image: url(https://picsum.photos/1000);
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 50%;
+    width: 80px;
+    
+}
+
+/* Mengatur lebar form dan meratakannya */
+form {
+    width: 500px;
+    margin: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Mengatur tampilan label */
+label {
+    width: 220px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Mengatur tampilan input dan textarea */
+.input-mode, textarea {
+    flex-grow: 1; /* Input akan mengisi sisa ruang */
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Mengatur tampilan tombol submit */
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Menambahkan efek hover pada tombol submit */
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+/* Mengatur margin pada div yang berisi form-group */
+.form-grup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Mengatur tampilan form ketika berada di layar kecil */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+    }
+}
+
+.form-container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px; /* Adds space between form and info-box */
+}
+
+.message-form {
+    flex: 1;
+    /* Add any existing styles for the form */
+}
+
+.info-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.info-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.info-box .info-item {
+    margin-bottom: 10px;
+}
+
+.info-box .info-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.info-box .info-value {
+    margin-left: 5px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 150px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.gender-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Optional: to add space between radio buttons and labels */
+}
+
+.gender-buttons input[type="radio"] {
+    margin-right: 0px; /* Optional: to add space between radio button and label */
+}
+
+.info-box {
+    width: 500px; /* Adjust as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.footer {
+    height: 50px;
+    background-color: dimgrey;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    border-radius: 50px;
+}
+.footer > p > a{
+    color: #ffc801;
+    text-decoration: none;
+}
+
+.submitted-info-title {
+    text-align: center;
+    background-color: #ffc801;
+    color: white; /* Mengubah warna tulisan menjadi putih */
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 70px; /* Tambah jarak antar ikon */
+    margin: 40px 0; /* Tambah jarak di atas dan di bawah */
+}
+
+.social-icon {
+    width: 60px; /* Perbesar lebar ikon */
+    height: 60px; /* Perbesar tinggi ikon */
+    display: block;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Membuat ikon berbentuk lingkaran */
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan saat hover */
+}
+
+.social-icon.whatsapp {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+}
+
+.social-icon.instagram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png');
+}
+
+.social-icon.facebook {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg');
+}
+
+.social-icon.linkedin {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png');
+}
