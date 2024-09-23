@@ -126,13 +126,46 @@ label {
 
 .form-container {
     display: flex;
-    align-items: stretch;
-    gap: 20px; /* Adds space between form and info-box */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .message-form {
-    flex: 1;
-    /* Add any existing styles for the form */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-mode, .gender-buttons, .btn-submit {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.gender-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-buttons input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.info-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
 }
 
 .info-box h3 {
@@ -152,12 +185,6 @@ label {
 
 .info-box .info-value {
     margin-left: 5px;
-}
-
-.form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
 }
 
 .form-group label {
@@ -242,4 +269,50 @@ label {
 
 .social-icon.linkedin {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png');
+}
+
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.message-form, .info-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 48%;
+}
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-mode, .gender-buttons, .btn-submit {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.gender-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-buttons input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.info-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
