@@ -35,11 +35,20 @@
     border: 2px solid black;
     margin: 1px;
 }
+
+
 .banner {
     height: 400px;
     background-image: url(https://picsum.photos/1001);
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom;    
+}
+
+.foto {
+    height: 400px;
+    width: 1348px;
+    background-size: cover;
+    background-position: bottom;    
 }
 
 .profile{
@@ -315,4 +324,10 @@ label {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+    }
 }
