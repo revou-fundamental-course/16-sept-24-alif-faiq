@@ -37,4 +37,21 @@ document.addEventListener('DOMContentLoaded', function() {
             submittedInfo.innerHTML = infoHTML;
         });
     }
+
+    // Function to rotate banners
+    const banners = document.querySelectorAll('.banner');
+    let currentBannerIndex = 0;
+
+    function rotateBanners() {
+        banners.forEach((banner, index) => {
+            banner.style.display = (index === currentBannerIndex) ? 'block' : 'none';
+        });
+        currentBannerIndex = (currentBannerIndex + 1) % banners.length;
+    }
+
+    // Initial call to display the first banner
+    rotateBanners();
+
+    // Set interval to rotate banners every 3 seconds
+    setInterval(rotateBanners, 3000);
 });

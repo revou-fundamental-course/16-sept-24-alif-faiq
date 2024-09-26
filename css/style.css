@@ -3,13 +3,16 @@
 .nav {
     display: flex;
     justify-content: flex-end;
+    background-color: gold;
+    border: 15px solid gold;
+    border-radius: 20px;
 }
 .nav > a {
     padding: 16px;
     text-align: center;
     font-size: 16px;
     color: white;
-    border: 5px solid white;
+    border: 5px solid gold;
     background-color: brown;
     text-decoration: none;
     font-weight: bold;
@@ -27,6 +30,9 @@
     padding-left: 50px;
     padding-right: 50px;
     font-family: system-ui;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 .body > div {
@@ -38,17 +44,23 @@
 
 
 .banner {
-    height: 400px;
-    background-image: url(https://picsum.photos/1001);
+    height: 480px;
     background-size: cover;
-    background-position: bottom;    
+    background-position: bottom;   
+    border-radius: 15px; 
+    margin-bottom: 30px;
 }
 
-.foto {
-    height: 400px;
-    width: 1348px;
-    background-size: cover;
-    background-position: bottom;    
+.foto-1 {
+    background-image: url(https://picsum.photos/1001);    
+}
+
+.foto-2 {
+    background-image: url(https://picsum.photos/1002);    
+}
+
+.foto-3 {
+    background-image: url(https://picsum.photos/1003);    
 }
 
 .profile{
@@ -226,10 +238,10 @@ label {
     text-align: center;
     color: white;
     line-height: 50px;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 .footer > p > a{
-    color: #ffc801;
+    color: gold;
     text-decoration: none;
 }
 
